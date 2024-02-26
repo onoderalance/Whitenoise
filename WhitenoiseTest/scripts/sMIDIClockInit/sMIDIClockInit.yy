@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"sMIDIClockInit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sMIDIClockInit",
+  "parent":{
+    "name":"Arpeggiator",
+    "path":"folders/GMSSimpleMIDI/Arpeggiator.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
