@@ -21,7 +21,7 @@ switch(m_menu_stage)
 		_option_string = "press any key in melody octave."
 		break;
 	case 3: //ready to enter game!
-		_option_string = "play an interval to begin."
+		_option_string = "play a note in both octaves to begin."
 		break;
 }
 
