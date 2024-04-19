@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-m_borders_offset = 0;
+depth = -10000;
+
+m_borders_offset = room_width/2;
 m_border_final_offset = 400;
 
 //handles fading in from white
