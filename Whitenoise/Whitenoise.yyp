@@ -70,7 +70,7 @@
     {"id":{"name":"snd_gust","path":"sounds/snd_gust/snd_gust.yy",},},
     {"id":{"name":"snd_synth_f4","path":"sounds/snd_synth_f4/snd_synth_f4.yy",},},
     {"id":{"name":"snd_wind_1","path":"sounds/snd_wind_1/snd_wind_1.yy",},},
-    {"id":{"name":"olga_thelavart_vS3idIiYxX0_unsplash","path":"sprites/olga_thelavart_vS3idIiYxX0_unsplash/olga_thelavart_vS3idIiYxX0_unsplash.yy",},},
+    {"id":{"name":"spr_paper","path":"sprites/spr_paper/spr_paper.yy",},},
     {"id":{"name":"spr_key","path":"sprites/spr_key/spr_key.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
   ],

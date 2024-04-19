@@ -5,7 +5,7 @@
 draw_set_font(fnt_title);
 draw_set_color(c_black);
 draw_set_halign(fa_center);
-draw_text(room_width/2, room_height/4+m_menu_y_offset, "whitespace");
+draw_text(room_width/2, room_height/4+m_menu_y_offset, "whitenoise");
 
 var _option_string = "";
 

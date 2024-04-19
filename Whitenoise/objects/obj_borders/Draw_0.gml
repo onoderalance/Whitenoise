@@ -15,7 +15,7 @@ draw_rectangle_color(0, 0, m_borders_offset, room_height, c_black, c_black, c_bl
 draw_rectangle_color(room_width-m_borders_offset, 0, room_width, room_height, c_black, c_black, c_black, c_black, false);
 
 
-m_border_fade_in_opacity = lerp(m_border_fade_in_opacity, 0, 0.005);
+m_border_fade_in_opacity = lerp(m_border_fade_in_opacity, 0, 0.05);
 
 //draw overlay white
 var _color = make_colour_rgb(234, 247, 255);

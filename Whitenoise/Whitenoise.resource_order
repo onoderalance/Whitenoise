@@ -47,7 +47,7 @@
     {"name":"sMIDISendNoteOn","order":4,"path":"scripts/sMIDISendNoteOn/sMIDISendNoteOn.yy",},
     {"name":"snd_gust","order":3,"path":"sounds/snd_gust/snd_gust.yy",},
     {"name":"snd_synth_f4","order":2,"path":"sounds/snd_synth_f4/snd_synth_f4.yy",},
-    {"name":"olga_thelavart_vS3idIiYxX0_unsplash","order":3,"path":"sprites/olga_thelavart_vS3idIiYxX0_unsplash/olga_thelavart_vS3idIiYxX0_unsplash.yy",},
+    {"name":"spr_paper","order":3,"path":"sprites/spr_paper/spr_paper.yy",},
     {"name":"spr_key","order":1,"path":"sprites/spr_key/spr_key.yy",},
   ],
 }

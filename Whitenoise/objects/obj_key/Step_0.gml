@@ -17,7 +17,7 @@ if(m_key_create_jump > 0)
 		case 6:
 		case 8:
 		case 10:
-			y = lerp(y, 870, 0.25);
+			y = lerp(y, 850, 0.25);
 			break;
 		default:
 			y = lerp(y, 900, 0.25);
