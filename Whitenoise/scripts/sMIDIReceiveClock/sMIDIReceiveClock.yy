@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"sMIDIReceiveClock",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sMIDIReceiveClock",
+  "parent":{
+    "name":"Arpeggiator",
+    "path":"folders/GMSSimpleMIDI/Arpeggiator.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
