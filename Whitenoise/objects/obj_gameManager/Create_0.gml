@@ -8,4 +8,4 @@ global.debug = false;
 audio_play_sound(snd_wind_1, 1, true);
 
 //set game to fullscreen
-//window_set_fullscreen(true);
+window_set_fullscreen(true);

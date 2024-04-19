@@ -5,7 +5,7 @@
 draw_set_font(fnt_title);
 draw_set_color(c_black);
 draw_set_halign(fa_center);
-draw_text(room_width/2, room_height/4, "whitespace");
+draw_text(room_width/2, room_height/4+m_menu_y_offset, "whitespace");
 
 var _option_string = "";
 
@@ -25,5 +25,12 @@ switch(m_menu_stage)
 		break;
 }
 
+//draw optionstring
 draw_set_font(fnt_options);
-draw_text(room_width/2, room_height*3/4, _option_string);
+draw_text_color(room_width/2, room_height*3/4+m_menu_y_offset, _option_string, c_black, c_black, c_black, c_black, m_menu_text_opacity);
+
+//draw overlay white
+var _color = make_colour_rgb(234, 247, 255);
+draw_set_alpha(m_menu_white_opacity);
+draw_rectangle_color(0, 0, room_width, room_height, _color, _color, _color, _color, false);
+draw_set_alpha(1);

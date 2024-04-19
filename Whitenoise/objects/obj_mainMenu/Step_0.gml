@@ -9,7 +9,8 @@ switch(m_menu_stage)
 		if(m_menu_note_held && ds_list_size(global.midi_notes_on) == 0)
 		{
 			m_menu_note_held = false;
-			m_menu_stage = 1; //advance to next stage as we have found some kind of input
+			m_menu_next_stage = 1; //advance to next stage as we have found some kind of input
+			m_menu_next_stage_timer = 60;
 		}
 		break;
 	case 1: //octave 1 (harmony)
@@ -26,7 +27,8 @@ switch(m_menu_stage)
 			global.octave_harmony = m_menu_note;
 			m_menu_note = -1;
 			m_menu_note_held = false;
-			m_menu_stage = 2; //advance to next stage as we have found some kind of input
+			m_menu_next_stage = 2; //advance to next stage as we have found some kind of input
+			m_menu_next_stage_timer = 60;
 		}
 		break;
 	case 2: //octave 2 (melody)
@@ -43,7 +45,8 @@ switch(m_menu_stage)
 			global.octave_melody = m_menu_note;
 			m_menu_note = -1;
 			m_menu_note_held = false;
-			m_menu_stage = 3; //advance to next stage as we have found some kind of input
+			m_menu_next_stage = 3; //advance to next stage as we have found some kind of input
+			m_menu_next_stage_timer = 60;
 		}
 		break;
 	case 3: //ready to enter game!
@@ -64,10 +67,33 @@ switch(m_menu_stage)
 			if(_harmony_note_found && _melody_note_found)
 				m_menu_note_held = true;
 		}
-		if(m_menu_note_held && ds_list_size(global.midi_notes_on) == 0)
+		if(m_menu_note_held && m_menu_next_stage != 4)
 		{
-			show_debug_message("wahahahha");
-			room_goto(rm_main); //go to main room
+			m_menu_next_stage = 4;
+			m_menu_next_stage_timer = 180;
+			audio_play_sound(snd_gust, 1, false);
 		}
 		break;
+	case 4: //enter main game
+		room_goto(rm_main); //go to main room
+		break;
+}
+
+if(m_menu_next_stage_timer >= 0)
+{
+	if(m_menu_next_stage == 4) //when next stage is moving to the main room, handle panning and fading
+	{
+		m_menu_y_offset = m_menu_y_offset - (m_menu_next_stage_timer-180)/4;
+		m_menu_white_opacity = lerp(m_menu_white_opacity, 1, 0.05);
+	}
+	else
+	{
+		m_menu_text_opacity = m_menu_next_stage_timer/60;
+	}
+		m_menu_next_stage_timer--;
+}
+else
+{
+	m_menu_text_opacity = lerp(m_menu_text_opacity, 1, 0.1);
+	m_menu_stage = m_menu_next_stage;
 }
