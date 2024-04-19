@@ -29,6 +29,6 @@ if(irandom_range(0, 60) == 1)
 
 
 //set position
-x = lerp(x, m_player_target_x, 0.1);
+x = lerp(x, m_player_target_x, 0.05);
 y = lerp(y, m_player_target_y, 0.05);
 
