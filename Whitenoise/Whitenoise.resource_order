@@ -47,7 +47,8 @@
     {"name":"sMIDISendNoteOn","order":4,"path":"scripts/sMIDISendNoteOn/sMIDISendNoteOn.yy",},
     {"name":"snd_gust","order":3,"path":"sounds/snd_gust/snd_gust.yy",},
     {"name":"snd_synth_f4","order":2,"path":"sounds/snd_synth_f4/snd_synth_f4.yy",},
-    {"name":"spr_paper","order":3,"path":"sprites/spr_paper/spr_paper.yy",},
+    {"name":"spr_skiier","order":4,"path":"sprites/spr_skiier/spr_skiier.yy",},
     {"name":"spr_key","order":1,"path":"sprites/spr_key/spr_key.yy",},
+    {"name":"spr_paper","order":3,"path":"sprites/spr_paper/spr_paper.yy",},
   ],
 }
