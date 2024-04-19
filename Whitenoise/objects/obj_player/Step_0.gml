@@ -10,6 +10,7 @@ var _midi_num = -1;
 if(ds_list_size(global.midi_messages) > 0)
 {
 	_midi_num = global.midi_messages[|0][|1];
+	_midi_num = _midi_num%12;
 	show_debug_message(string(_midi_num));
 }
 else
@@ -17,6 +18,10 @@ else
 	show_debug_message("NO MIDI");
 }
 
+if(_midi_num != -1)
+	m_player_position = _midi_num;
+
+/*
 if(keyboard_check(ord("1")))
 	m_player_position = 0;
 if(keyboard_check(ord("2")))
