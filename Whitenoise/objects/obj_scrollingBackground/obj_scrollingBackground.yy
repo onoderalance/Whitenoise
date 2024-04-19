@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_keyboard",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_scrollingBackground",
+  "eventList":[],
   "managed":true,
-  "name":"obj_keyboard",
+  "name":"obj_scrollingBackground",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
