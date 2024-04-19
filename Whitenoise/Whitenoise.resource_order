@@ -26,6 +26,7 @@
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
     {"name":"obj_soundManager","order":3,"path":"objects/obj_soundManager/obj_soundManager.yy",},
     {"name":"rm_main","order":1,"path":"rooms/rm_main/rm_main.yy",},
+    {"name":"rm_menu","order":2,"path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"sMIDIArpeggiatorStep","order":2,"path":"scripts/sMIDIArpeggiatorStep/sMIDIArpeggiatorStep.yy",},
     {"name":"sMIDIArpeggiatorStop","order":3,"path":"scripts/sMIDIArpeggiatorStop/sMIDIArpeggiatorStop.yy",},
     {"name":"sMIDIClockInit","order":4,"path":"scripts/sMIDIClockInit/sMIDIClockInit.yy",},

@@ -46,6 +46,7 @@
     {"id":{"name":"obj_soundManager","path":"objects/obj_soundManager/obj_soundManager.yy",},},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"id":{"name":"rm_midiTest","path":"rooms/rm_midiTest/rm_midiTest.yy",},},
+    {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"sMIDIArpeggiatorStep","path":"scripts/sMIDIArpeggiatorStep/sMIDIArpeggiatorStep.yy",},},
     {"id":{"name":"sMIDIArpeggiatorStop","path":"scripts/sMIDIArpeggiatorStop/sMIDIArpeggiatorStop.yy",},},
     {"id":{"name":"sMIDIClockInit","path":"scripts/sMIDIClockInit/sMIDIClockInit.yy",},},
@@ -63,6 +64,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"roomId":{"name":"rm_midiTest","path":"rooms/rm_midiTest/rm_midiTest.yy",},},
   ],
