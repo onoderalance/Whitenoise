@@ -3,8 +3,19 @@
 
 //determines player position based on player_position variable
 
+if(ds_list_size(global.midi_notes_on) > 0)
+{
+	for(var _i = 0; _i < ds_list_size(global.midi_notes_on); _i++)
+	{
+		if(floor(global.midi_notes_on[|_i]/12) == global.octave_melody)
+			m_player_position = global.midi_notes_on[|_i]%12;
+	}
+}
+
+//set position
 x = m_player_position*(room_width/12);
 
+/*
 var _midi_num = -1;
 
 if(ds_list_size(global.midi_messages) > 0)
