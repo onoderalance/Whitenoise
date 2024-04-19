@@ -22,6 +22,8 @@
   "ResourceOrderSettings":[
     {"name":"GMSSimpleMIDI","order":3,"path":"extensions/GMSSimpleMIDI/GMSSimpleMIDI.yy",},
     {"name":"oArpeggiatorControl","order":1,"path":"objects/oArpeggiatorControl/oArpeggiatorControl.yy",},
+    {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"rm_main","order":1,"path":"rooms/rm_main/rm_main.yy",},
     {"name":"sMIDIArpeggiatorStep","order":2,"path":"scripts/sMIDIArpeggiatorStep/sMIDIArpeggiatorStep.yy",},
     {"name":"sMIDIArpeggiatorStop","order":3,"path":"scripts/sMIDIArpeggiatorStop/sMIDIArpeggiatorStop.yy",},
     {"name":"sMIDIClockInit","order":4,"path":"scripts/sMIDIClockInit/sMIDIClockInit.yy",},
