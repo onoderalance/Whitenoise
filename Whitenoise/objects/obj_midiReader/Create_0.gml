@@ -19,3 +19,5 @@ global.midi_notes_on = ds_list_create();
 global.octave_harmony = -1;
 global.octave_melody = -1;
 
+
+

@@ -5,7 +5,7 @@
 //is this the right approach? feels claustrophobic...
 if(m_borders_offset < m_border_final_offset)
 {
-	m_borders_offset += 2;
+	m_borders_offset += 4;
 }
 
 //left rectangle
