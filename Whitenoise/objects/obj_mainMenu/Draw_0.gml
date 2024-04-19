@@ -15,10 +15,13 @@ switch(m_menu_stage)
 		_option_string = "press any key."
 		break;
 	case 1: //octave 1
+		_option_string = "press any key in harmony octave."
 		break;
 	case 2: //octave 2
+		_option_string = "press any key in melody octave."
 		break;
 	case 3: //ready to enter game!
+		_option_string = "play an interval to begin."
 		break;
 }
 
