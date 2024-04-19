@@ -28,6 +28,12 @@ for(_i = 0; _i < ds_list_size(global.midi_messages); _i++)
 	//note on messages
 	if(global.midi_messages[|_i][|0] == 144)
 	{
+		//play note first
+		var _note = global.midi_messages[|_i][|1] - 65; //note offset based on 65 or F4
+		var _pitch = 1; //var to hold pitch adjustment
+		_pitch = power(2, _note/12)
+		audio_play_sound(snd_synth_f4, 1, false, 1, 0, _pitch);
+		//then add it to the ON list
 		var _found_note = false;
 		for(var _j = 0; _j < ds_list_size(global.midi_notes_on) && !_found_note; _j++)
 		{

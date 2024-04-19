@@ -41,7 +41,6 @@
     {"name":"sMIDISendCC","order":2,"path":"scripts/sMIDISendCC/sMIDISendCC.yy",},
     {"name":"sMIDISendNoteOff","order":3,"path":"scripts/sMIDISendNoteOff/sMIDISendNoteOff.yy",},
     {"name":"sMIDISendNoteOn","order":4,"path":"scripts/sMIDISendNoteOn/sMIDISendNoteOn.yy",},
-    {"name":"snd_synth_1","order":1,"path":"sounds/snd_synth_1/snd_synth_1.yy",},
-    {"name":"snd_synth_fsharp4","order":2,"path":"sounds/snd_synth_fsharp4/snd_synth_fsharp4.yy",},
+    {"name":"snd_synth_f4","order":2,"path":"sounds/snd_synth_f4/snd_synth_f4.yy",},
   ],
 }
