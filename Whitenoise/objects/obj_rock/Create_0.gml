@@ -7,3 +7,5 @@ else
 	sprite_index = spr_rock2;
 	
 m_rock_speed = 10;
+
+m_rock_has_collided = false;
