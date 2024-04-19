@@ -5,6 +5,18 @@
 
 x = m_player_position*(room_width/12);
 
+var _midi_num = -1;
+
+if(ds_list_size(global.midi_messages) > 0)
+{
+	_midi_num = global.midi_messages[|0][|1];
+	show_debug_message(string(_midi_num));
+}
+else
+{
+	show_debug_message("NO MIDI");
+}
+
 if(keyboard_check(ord("1")))
 	m_player_position = 0;
 if(keyboard_check(ord("2")))
