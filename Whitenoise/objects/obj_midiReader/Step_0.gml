@@ -28,23 +28,29 @@ for(_i = 0; _i < ds_list_size(global.midi_messages); _i++)
 	//note on messages
 	if(global.midi_messages[|_i][|0] == 144)
 	{
-		//play note first
+		/*//play note first
 		var _note = global.midi_messages[|_i][|1] - 65; //note offset based on 65 or F4
 		var _pitch = 1; //var to hold pitch adjustment
 		_pitch = power(2, _note/12)
 		audio_play_sound(snd_synth_f4, 1, false, 1, 0, _pitch);
+		*/
+		
 		//then add it to the ON list
 		var _found_note = false;
 		for(var _j = 0; _j < ds_list_size(global.midi_notes_on) && !_found_note; _j++)
 		{
 			if(global.midi_notes_on[|_j] == global.midi_messages[|_i][|1])
 			{
+				
 				//found the note in the list already
 				_found_note = true;
 			}
 		}
 		if(!_found_note) //if note is not already in the list, add it to the list
 		{
+			//call script to play note
+		scr_note_play(global.midi_messages[|_i][|1], snd_square_c4, 60);	
+			
 			ds_list_add(global.midi_notes_on, global.midi_messages[|_i][|1]);
 		}
 	}
@@ -56,6 +62,7 @@ for(_i = 0; _i < ds_list_size(global.midi_messages); _i++)
 		{
 			if(global.midi_notes_on[|_j] == global.midi_messages[|_i][|1])
 			{
+				scr_note_kill(global.midi_messages[|_i][|1]);
 				//found the note in the list, remove it
 				ds_list_delete(global.midi_notes_on, _j);
 				_found_note = true;
