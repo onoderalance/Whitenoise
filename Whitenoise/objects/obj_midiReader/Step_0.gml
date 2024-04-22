@@ -78,3 +78,6 @@ for(var _j = 0; _j < ds_list_size(global.midi_notes_on); _j++)
 	show_debug_message(global.midi_notes_on[|_j]);
 }
 //show_debug_message(ds_list_size(global.midi_messages));
+
+//update adsr
+scr_note_adsr();
