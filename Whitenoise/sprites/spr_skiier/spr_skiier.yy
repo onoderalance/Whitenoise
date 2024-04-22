@@ -23,7 +23,7 @@
   ],
   "name":"spr_skiier",
   "nineSlice":null,
-  "origin":1,
+  "origin":7,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":136,
-    "yorigin":0,
+    "yorigin":340,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

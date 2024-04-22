@@ -15,5 +15,5 @@ y = 0 - sprite_height*2;
 m_player_last_note = -1;
 
 m_player_target_x = x;
-m_player_target_y = 100;
+m_player_target_y = 300;
 

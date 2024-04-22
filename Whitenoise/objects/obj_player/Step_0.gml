@@ -25,7 +25,7 @@ if(m_player_target_x < x)
 
 //randomly change y pos for more fluidity
 if(irandom_range(0, 60) == 1)
-	m_player_target_y = random_range(100, 150);
+	m_player_target_y = random_range(300, 350);
 
 
 //set position
