@@ -5,9 +5,9 @@
 global.debug = false;
 
 //bpm value to scale speed off of
-global.bpm = 120
+global.bpm = 120;
 //global value for speed of objects scrolling upwards
-global.speed = 755/60;
+global.speed = 755/60 * (global.bpm/120);
 //global.speed = 10;
 
 //starts looping wind sound NEVER ENDING
