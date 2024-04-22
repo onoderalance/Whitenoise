@@ -8,6 +8,8 @@ function scr_init_notes()
 	global.players = array_create(128);
 	global.player_gain = array_create(128, 0);
 	global.player_state = array_create(128, -1); //dead -1, attack 0, sustain 1, decay 2
+	
+	global.player_velocity = array_create(128, 0); //tracks velocity that the note was hit at
 	/*for(var _i = 0; i < 128; i++)
 	{
 		var _new_player =
@@ -51,7 +53,9 @@ function scr_note_kill(_note)
 //update adsr values for all players (step event)
 function scr_note_adsr()
 {
+	show_debug_message("MIDDLE C");
 	show_debug_message(string(global.player_gain[60]));
+	show_debug_message(string(global.player_velocity[60]));
 	for(var _i = 0; _i < 128; _i++)
 	{
 		switch(global.player_state[_i])
@@ -59,18 +63,18 @@ function scr_note_adsr()
 			case -1: //not playing
 				break;
 			case 0: //attack
-				if(global.player_gain[_i] < 0.99)
+				if(global.player_gain[_i] < global.player_velocity[_i] - 0.01)
 				{
-					global.player_gain[_i] = lerp(global.player_gain[_i], 1, 0.5);
+					global.player_gain[_i] = lerp(global.player_gain[_i], global.player_velocity[_i], 0.5);
 				}
 				else
 				{
-					global.player_gain[_i] = 1;
+					global.player_gain[_i] = global.player_velocity[_i];
 					global.player_state[_i] = 1;//hit sustain
 				}
 				break;
 			case 1: //sustain
-				global.player_gain[_i] = 1;
+				global.player_gain[_i] = global.player_velocity[_i];
 				break;
 			case 2: //decay
 				if(global.player_gain[_i] > 0.01)

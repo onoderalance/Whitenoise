@@ -49,7 +49,11 @@ for(_i = 0; _i < ds_list_size(global.midi_messages); _i++)
 		if(!_found_note) //if note is not already in the list, add it to the list
 		{
 			//call script to play note
-		scr_note_play(global.midi_messages[|_i][|1], snd_square_c4, 60);	
+			scr_note_play(global.midi_messages[|_i][|1], snd_square_c4, 60);	
+			//adds new velocity to array, divided by 127 to get accurate val as portion of 1
+			global.player_velocity[global.midi_messages[|_i][|1]] = global.midi_messages[|_i][|2]/127;
+			show_debug_message("VELOCITY:");
+			show_debug_message(global.player_velocity[_i]);
 			
 			ds_list_add(global.midi_notes_on, global.midi_messages[|_i][|1]);
 		}
