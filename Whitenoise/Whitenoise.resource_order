@@ -30,7 +30,7 @@
     {"name":"obj_mainMenu","order":4,"path":"objects/obj_mainMenu/obj_mainMenu.yy",},
     {"name":"obj_midiReader","order":2,"path":"objects/obj_midiReader/obj_midiReader.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
-    {"name":"obj_rock","order":10,"path":"objects/obj_rock/obj_rock.yy",},
+    {"name":"obj_obstacle","order":10,"path":"objects/obj_obstacle/obj_obstacle.yy",},
     {"name":"obj_scrollingBackground","order":9,"path":"objects/obj_scrollingBackground/obj_scrollingBackground.yy",},
     {"name":"rm_main","order":1,"path":"rooms/rm_main/rm_main.yy",},
     {"name":"rm_menu","order":2,"path":"rooms/rm_menu/rm_menu.yy",},

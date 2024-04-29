@@ -6,8 +6,8 @@ y -= global.speed;
 if(y <= -500)
 	instance_destroy();
 	
-if(place_meeting(x, y, obj_player) && !m_rock_has_collided)
+if(place_meeting(x, y, obj_player) && !m_obstacle_has_collided)
 {
 	audio_play_sound(snd_rock, 1, false);
-	m_rock_has_collided = true;
+	m_obstacle_has_collided = true;
 }
