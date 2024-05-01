@@ -75,6 +75,21 @@ for(_i = 0; _i < ds_list_size(global.midi_messages); _i++)
 	}
 }
 
+//if there is a midi note on, set the root note
+global.midi_root = -1;
+if(ds_list_size(global.midi_notes_on) > 0)
+{
+	for(var _j = 0; _j < ds_list_size(global.midi_notes_on) && global.midi_root == -1; _j++)
+	{
+		show_debug_message("gotcha");
+		if(floor(global.midi_notes_on[|_j]/12) == global.octave_harmony)
+		{
+			global.midi_root = global.midi_notes_on[|_j];
+		}
+	}
+	show_debug_message("ROOT: " + string(global.midi_root));	
+}
+
 //debug print for all notes in the "on" list
 show_debug_message("all notes:");
 for(var _j = 0; _j < ds_list_size(global.midi_notes_on); _j++)
