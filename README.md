@@ -6,12 +6,15 @@
 
 # How To Play
   Step 1:
-  - Before running Whitenoise.exe, ensure a MIDI keyboard on Channel 1 with at least two channels is plugged in
+  - Unzip Whitenoise.zip
   
   Step 2:
-  - Run Whitenoise.exe
+  - Before running Whitenoise.exe, ensure a MIDI keyboard on Channel 1 with at least two channels is plugged in
   
   Step 3:
+  - Run Whitenoise.exe
+  
+  Step 4:
   - The game will ask for notes on the keyboard to be played in four stages before running the main gameplay loop:
   First, play any note so that the keyboard is recognized
   Second, play a note in the harmony octave (the lower of the two octaves you will use generally)
@@ -19,5 +22,5 @@
   Fourth, play a note in both octaves simultaneously
   NOTE: The next stage will only proceed once the note is released, so do not hold notes during this stage
   
-  Step 4:
+  Step 5:
   - Have fun!
