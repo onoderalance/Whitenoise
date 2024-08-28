@@ -2,7 +2,7 @@
   An harmonic skiing game controlled wholly by MIDI-input.
 
 # Concept
-  Whitenoise is a harmonic skiing game based on MIDI-input through the [GMSSimpleMIDI](https://github.com/RhyminGarfunkle/GMSSimpleMIDI) GameMaker implementation of RtMidi. The player controls a skier descending a slope, as well as the terrain of the slope through two octaves of midi control. One octave, the harmony, controls the generation of the terrain based on intervals played. The other octave, the melody, controls the skier who must navigate the generated obstacles of the harmony. Musical ideas played on the keyboard are thus represented on screen by the melodic skier navigating or interating with the harmonic landscape of the mountain.
+  Whitenoise is a harmonic skiing game based on MIDI-input through the [GMSSimpleMIDI](https://github.com/RhyminGarfunkle/GMSSimpleMIDI) GameMaker DLL for RtMidi. The player controls a skier descending a slope, as well as the terrain of the slope through two octaves of midi control. One octave, the harmony, controls the generation of the terrain based on intervals played. The other octave, the melody, controls the skier who must navigate the generated obstacles of the harmony. Musical ideas played on the keyboard are thus represented on screen by the melodic skier navigating or interating with the harmonic landscape of the mountain.
 
 # How To Play
   Step 1:
